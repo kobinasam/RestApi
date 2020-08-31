@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "a9997b26-c3f9-40a1-907b-b3a97540610c",
+		"name": "ROAM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "requestCode",
+							"value": "RQ001",
+							"type": "text"
+						},
+						{
+							"key": "requestorCode",
+							"value": "RQ002",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "getRequest",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/classes/getRequest.php?requestCode=RQ001&requestorCode=RQ002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"classes",
+						"getRequest.php"
+					],
+					"query": [
+						{
+							"key": "requestCode",
+							"value": "RQ001"
+						},
+						{
+							"key": "requestorCode",
+							"value": "RQ002"
+						}
+					]
+				},
+				"description": "this is for rider requests"
+			},
+			"response": []
+		},
+		{
+			"name": "registeruser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/classes/registeruser.php?username=Kobina&pwd=Kobina123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"classes",
+						"registeruser.php"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Kobina"
+						},
+						{
+							"key": "pwd",
+							"value": "Kobina123"
+						}
+					]
+				},
+				"description": "Registration of users"
+			},
+			"response": []
+		},
+		{
+			"name": "getUsers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "users of the app"
+			},
+			"response": []
+		},
+		{
+			"name": "getRiders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "get riders details"
+			},
+			"response": []
+		},
+		{
+			"name": "getNotifications",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "see all notifications"
+			},
+			"response": []
+		},
+		{
+			"name": "loginevent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/api.php?actions=loginevent&apikey=483242776672314c6c76636a38356f7537464a6b394f6258567a30443355675479704b7151526543344d685a4750537461496d41364e577345786e596964&userid=4567&ufullname=Harisu Inusah&activity=runner&remoteip=983.398.34.3.2&useragent=newadmin&user=admin&type=0009",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "actions",
+							"value": "loginevent"
+						},
+						{
+							"key": "apikey",
+							"value": "483242776672314c6c76636a38356f7537464a6b394f6258567a30443355675479704b7151526543344d685a4750537461496d41364e577345786e596964"
+						},
+						{
+							"key": "userid",
+							"value": "4567"
+						},
+						{
+							"key": "ufullname",
+							"value": "Harisu Inusah"
+						},
+						{
+							"key": "activity",
+							"value": "runner"
+						},
+						{
+							"key": "remoteip",
+							"value": "983.398.34.3.2"
+						},
+						{
+							"key": "useragent",
+							"value": "newadmin"
+						},
+						{
+							"key": "user",
+							"value": "admin"
+						},
+						{
+							"key": "type",
+							"value": "0009"
+						}
+					]
+				},
+				"description": "checks criteria for user logins"
+			},
+			"response": []
+		},
+		{
+			"name": "loginuser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Enables users to login"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "user logout"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
